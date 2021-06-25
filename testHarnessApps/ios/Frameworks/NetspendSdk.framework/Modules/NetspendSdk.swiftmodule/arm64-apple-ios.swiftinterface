@@ -1,0 +1,159 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name NetspendSdk
+import CommonCrypto
+import Compression
+import CoreGraphics
+import CoreLocation
+import Foundation
+import Security
+import Swift
+import UIKit
+import WebKit
+@objc @_hasMissingDesignatedInitializers public class NetspendSdkViewController : UIKit.UIViewController, NetspendSdk.NetspendSdkViewControllerDelegate {
+  public var purpose: Swift.String! {
+    get
+  }
+  weak public var delegate: NetspendSdk.NetspendSdkViewControllerDelegate?
+  public var loadingView: UIKit.UIView {
+    get
+    set
+  }
+  @objc override dynamic public var preferredStatusBarStyle: UIKit.UIStatusBarStyle {
+    @objc get
+    @objc set(val)
+  }
+  public func loadPurpose()
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public func willMove(toParent parent: UIKit.UIViewController?)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+public enum NetspendSdkInitializationError : Swift.Error {
+  case alreadyInitialized
+  case invalidConfig
+  public static func == (a: NetspendSdk.NetspendSdkInitializationError, b: NetspendSdk.NetspendSdkInitializationError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public enum NetspendSdkPurposeError : Swift.Error {
+  case uninitialized
+  case alreadyActive
+  public static func == (a: NetspendSdk.NetspendSdkPurposeError, b: NetspendSdk.NetspendSdkPurposeError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@_hasMissingDesignatedInitializers public class NetspendSdk {
+  public static let shared: NetspendSdk.NetspendSdk
+  final public let pluginManager: NetspendSdk.PluginManager
+  public func initialize(sdkId: Swift.String, theme: NetspendSdk.NetspendSdkTheme, branding: Swift.Dictionary<Swift.String, Any>, iovationToken: Swift.String) throws
+  @available(*, deprecated, message: "Use openWithPurpose without an explicit frame. Currently only supprts filling the entire viewport.")
+  public func openWithPurpose(purpose: Swift.String, intoFrame frame: CoreGraphics.CGRect, withPasscode passcode: Swift.String, usingParams params: Swift.Dictionary<Swift.String, Any>? = nil) throws -> NetspendSdk.NetspendSdkViewController
+  public func openWithPurpose(purpose: Swift.String, withPasscode passcode: Swift.String, usingParams params: Swift.Dictionary<Swift.String, Any>? = nil) throws -> NetspendSdk.NetspendSdkViewController
+  public func createUserSessionConnection(userSessionInitializationData: Swift.String, iovationToken: Swift.String) throws -> NetspendSdk.NetspendSdkUserSessionConnection
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PluginRequest {
+  public var terminated: Swift.Bool {
+    get
+  }
+  public var active: Swift.Bool {
+    get
+  }
+  final public let requestParams: Swift.Dictionary<Swift.String, Any>
+  public func respond(withSuccessValue successValue: Any?, terminating: Swift.Bool = true)
+  public func respond(withErrorValue errorValue: Any?, terminating: Swift.Bool = true)
+  public func respondTerminating()
+  @objc deinit
+}
+public enum NetspendSdkPurposeState {
+  case started
+  case cancelled
+  case success(result: Swift.Dictionary<Swift.String, Any>)
+  case error(reason: Swift.Dictionary<Swift.String, Any>)
+}
+public struct NetspendSdkColorGroup {
+  public init(color50: Swift.String, color100: Swift.String, color200: Swift.String, color300: Swift.String, color400: Swift.String, color500: Swift.String, color600: Swift.String, color700: Swift.String, color800: Swift.String, color900: Swift.String)
+  public let color50: Swift.String
+  public let color100: Swift.String
+  public let color200: Swift.String
+  public let color300: Swift.String
+  public let color400: Swift.String
+  public let color500: Swift.String
+  public let color600: Swift.String
+  public let color700: Swift.String
+  public let color800: Swift.String
+  public let color900: Swift.String
+}
+public struct NetspendSdkTheme {
+  public init(neutralColor: NetspendSdk.NetspendSdkColorGroup, defaultColor: NetspendSdk.NetspendSdkColorGroup, accentColor: NetspendSdk.NetspendSdkColorGroup, positiveColor: NetspendSdk.NetspendSdkColorGroup, negativeColor: NetspendSdk.NetspendSdkColorGroup, specialColor: NetspendSdk.NetspendSdkColorGroup)
+  public let neutralColor: NetspendSdk.NetspendSdkColorGroup
+  public let defaultColor: NetspendSdk.NetspendSdkColorGroup
+  public let accentColor: NetspendSdk.NetspendSdkColorGroup
+  public let positiveColor: NetspendSdk.NetspendSdkColorGroup
+  public let negativeColor: NetspendSdk.NetspendSdkColorGroup
+  public let specialColor: NetspendSdk.NetspendSdkColorGroup
+}
+public enum NetspendSdkUserSessionError : Swift.Error {
+  case decryptFailure
+  case encryptFailure
+  public static func == (a: NetspendSdk.NetspendSdkUserSessionError, b: NetspendSdk.NetspendSdkUserSessionError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@_hasMissingDesignatedInitializers public class NetspendSdkUserSession {
+  final public let sessionId: Swift.String
+  public func decrypt(value: Swift.String) throws -> [Swift.String : Any]
+  public func encrypt(value: [Swift.String : Any]) throws -> Swift.String
+  @objc deinit
+}
+public enum NetspendSdkUserSessionConnectionError : Swift.Error {
+  case invalidUserSessionInitializationData
+  case secureStorageFailure
+  case deviceDataGenerationFailure
+  case userSessionConnectionFailure
+  case userSessionAlreadyConnected
+  public static func == (a: NetspendSdk.NetspendSdkUserSessionConnectionError, b: NetspendSdk.NetspendSdkUserSessionConnectionError) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@_hasMissingDesignatedInitializers public class NetspendSdkUserSessionConnection {
+  public var deviceData: Swift.String! {
+    get
+  }
+  public func createUserSession(userSessionEncryptedData: Swift.String) throws -> NetspendSdk.NetspendSdkUserSession
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class PluginManager {
+  public typealias PluginHandler = (NetspendSdk.PluginRequest) -> Swift.Void
+  public func register(pluginName: Swift.String, methodName: Swift.String, pluginHandler: @escaping NetspendSdk.PluginManager.PluginHandler)
+  public func handleRequest(pluginRequest: NetspendSdk.PluginRequest) -> Swift.Bool
+  @objc deinit
+}
+public protocol NetspendSdkViewControllerDelegate : AnyObject {
+  func netspendSdkViewController(_ viewController: NetspendSdk.NetspendSdkViewController, didChange state: NetspendSdk.NetspendSdkPurposeState)
+  func netspendSdkViewController(_ viewController: NetspendSdk.NetspendSdkViewController, didEvent event: NetspendSdk.NetspendSdkPurposeEvent)
+  func netspendSdkViewController(_ viewController: NetspendSdk.NetspendSdkViewController, didEncounterFatalError errorMessage: Swift.String)
+}
+extension NetspendSdkViewControllerDelegate {
+  public func netspendSdkViewController(_ viewController: NetspendSdk.NetspendSdkViewController, didChange state: NetspendSdk.NetspendSdkPurposeState)
+  public func netspendSdkViewController(_ viewController: NetspendSdk.NetspendSdkViewController, didEvent event: NetspendSdk.NetspendSdkPurposeEvent)
+  public func netspendSdkViewController(_ viewController: NetspendSdk.NetspendSdkViewController, didEncounterFatalError errorMessage: Swift.String)
+}
+public typealias NetspendSdkPurposeEvent = (name: Swift.String, data: Swift.Dictionary<Swift.String, Any>?)
+extension NetspendSdk.NetspendSdkInitializationError : Swift.Equatable {}
+extension NetspendSdk.NetspendSdkInitializationError : Swift.Hashable {}
+extension NetspendSdk.NetspendSdkPurposeError : Swift.Equatable {}
+extension NetspendSdk.NetspendSdkPurposeError : Swift.Hashable {}
+extension NetspendSdk.NetspendSdkUserSessionError : Swift.Equatable {}
+extension NetspendSdk.NetspendSdkUserSessionError : Swift.Hashable {}
+extension NetspendSdk.NetspendSdkUserSessionConnectionError : Swift.Equatable {}
+extension NetspendSdk.NetspendSdkUserSessionConnectionError : Swift.Hashable {}

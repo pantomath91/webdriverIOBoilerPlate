@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mfes_name_array">
+        <item>Activate Card</item>
+        <item>Dcf Alt Verification</item>
+        <item>Debit Card Funding</item>
+        <item>Debit Statements</item>
+        <item>File a Dispute</item>
+        <item>Locations</item>
+        <item>Mobile Check Load</item>
+        <item>Replace Card</item>
+        <item>Reset Pin</item>
+        <item>Savings Statements</item>
+	    <item>Link Bank</item>
+	    <item>File a Dispute Lean</item>
+    </string-array>
+</resources>

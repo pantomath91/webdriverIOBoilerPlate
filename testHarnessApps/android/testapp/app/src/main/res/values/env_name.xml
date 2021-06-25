@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="env_name">
+        <item>PROD</item>
+        <item>PIT:C</item>
+        <item>CERT (For Partners)</item>
+        <item>TEST:C</item>
+        <item>CLOUD:PHOENIX</item>
+        <item>CLOUDTEST:A</item>
+        <item>CLOUDTEST:F</item>
+        <item>LOCAL:8081</item>
+    </string-array>
+</resources>

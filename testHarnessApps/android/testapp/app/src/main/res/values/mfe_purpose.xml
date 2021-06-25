@@ -1,0 +1,14 @@
+<resources>
+    <string name="Activate_Card">activateCard</string>
+    <string name="Dcf_Alt_Verification">dcfAltVerification</string>
+    <string name="Debit_Card_Funding">debitCardFunding</string>
+    <string name="Debit_Statements">statementsDebit</string>
+    <string name="File_a_Dispute">fileDispute</string>
+    <string name="Locations">locations</string>
+    <string name="Mobile_Check_Load">mobileCheckLoad</string>
+    <string name="Replace_Card">replaceCard</string>
+    <string name="Reset_Pin">resetPin</string>
+    <string name="Savings_Statements">statementsSavings</string>
+    <string name="Link_Bank">linkBank</string>
+    <string name="File_a_Dispute_Lean">fileDisputeLean</string>
+</resources>
