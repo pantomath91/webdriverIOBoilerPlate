@@ -1,4 +1,6 @@
 import TabBar from '../screenobjects/components/TabBar';
+import AboutScreen from '../../testsHarnessAppSpecs/screenObject/about.screen';
+import EnvScreen from '../../testsHarnessAppSpecs/screenObject/env.screen';
 import SwipeScreen from '../screenobjects/SwipeScreen';
 import Carousel from '../screenobjects/components/Carousel';
 import Gestures from '../helpers/Gestures';
@@ -6,6 +8,11 @@ import Gestures from '../helpers/Gestures';
 describe('WebdriverIO and Appium, when using swiping', () => {
     beforeEach(() => {
         TabBar.waitForTabBarShown();
+        // AboutScreen.waitForIsShown(true);
+        // AboutScreen.aboutScreenButton.click();
+        // EnvScreen.waitForIsShown(true);
+        // EnvScreen.envSelection.click();
+        // EnvScreen.envSubmitButton.click();
         TabBar.openSwipe();
         SwipeScreen.waitForIsShown(true);
     });

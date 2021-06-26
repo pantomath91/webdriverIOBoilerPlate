@@ -6,7 +6,8 @@ const AndroidInfo = require('./android.info');
 // Specs
 // ============
 config.specs = [
-    './tests/specs/**/app*.spec.js',
+    // './tests/specs/app.swipe.spec.ts',
+    './testsHarnessAppSpecs/specs/app.testHarness.login.spec.ts',
 ];
 
 // ============

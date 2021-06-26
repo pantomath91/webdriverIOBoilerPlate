@@ -5,6 +5,7 @@
     android:id="@+id/environmentSelectionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="Env-screen"
     tools:context=".EnvSwitcher">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -18,7 +19,7 @@
         android:hint="@string/env_prompt"
         app:boxBackgroundColor="@color/colorPrimary"
         app:hintTextColor="@color/colorWhiteOpaque"
-        app:layout_constraintBottom_toTopOf="@+id/env_continue_btn">
+        app:layout_constraintBottom_toTopOf="@+id/env_submit_btn">
 
         <AutoCompleteTextView
             style="@style/EnvironmentSelectionTheme"
@@ -31,7 +32,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/env_continue_btn"
+        android:id="@+id/env_submit_btn"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_centerHorizontal="true"

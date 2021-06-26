@@ -27,8 +27,9 @@ class EnvSwitcher : AppCompatActivity() {
 
         val editTextFilledExposedDropdown: AutoCompleteTextView =
             findViewById(R.id.filled_exposed_dropdown)
-        val initBtn = findViewById<Button>(R.id.env_continue_btn)
-        editTextFilledExposedDropdown.setText(environment.get(2))
+        val initBtn = findViewById<Button>(R.id.env_submit_btn)
+        // Set default environment to testC for mfe testing
+        editTextFilledExposedDropdown.setText(environment.get(3))
         editTextFilledExposedDropdown.setAdapter(adapter)
         initBtn.isEnabled = true;
         initBtn.requestFocus();

@@ -5,6 +5,7 @@
     android:id="@+id/environmentSelectionLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contentDescription="MfeDashboard-screen"
     tools:context=".EnvSwitcher">
 
     <androidx.appcompat.widget.AppCompatButton
