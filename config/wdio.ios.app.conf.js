@@ -5,7 +5,7 @@ const { config } = require('./wdio.shared.conf');
 // Specs
 // ============
 config.specs = [
-    './tests/specs/app.forms.spec.js',
+    './testsHarnessAppSpecs/specs/app.testHarness.login.spec.ts',
 ];
 
 // ============
@@ -27,12 +27,12 @@ config.capabilities = [
         // http://appium.io/docs/en/writing-running-appium/caps/
         deviceName: 'iPhone 11',
         showIosLog: 'true',
-        platformVersion: '13.0',
+        platformVersion: '14.4',
         // `automationName` will be mandatory, see
         // https://github.com/appium/appium/releases/tag/v1.13.0
         automationName: 'XCUITest',
         // The path to the app
-        app: join(process.cwd(), '/testHarnessApps/ios/Netspend_TestApp.app'),
+        app: join(process.cwd(), '/apps/Netspend_TestApp.app'),
         newCommandTimeout: 240,
     },
 ];

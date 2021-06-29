@@ -7,7 +7,7 @@
     "android.browserstack.app": "./node_modules/.bin/wdio ./config/browserstack/wdio.android.bs.app.conf.js",
     "android.app": "./node_modules/.bin/wdio ./config/wdio.android.app.conf.js",
     "android.browser": "./node_modules/.bin/wdio ./config/wdio.android.browser.conf.js",
-    "ios.app.build": "cd testHarnessApps/ios && bundle exec fastlane build_framework",
+    "ios.app.build": "cd testHarnessApps/ios && bundle exec fastlane build",
     "ios.app": "./node_modules/.bin/wdio ./config/wdio.ios.app.conf.js",
     "ios.browserstack.app": "./node_modules/.bin/wdio ./config/browserstack/wdio.ios.bs.app.conf.js",
     "ios.browser": "./node_modules/.bin/wdio ./config/wdio.ios.browser.conf.js",
