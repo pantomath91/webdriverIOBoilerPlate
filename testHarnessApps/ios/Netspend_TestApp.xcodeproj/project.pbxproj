@@ -16,7 +16,6 @@
 		D219DB66265FD26D00AF691F /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219DB60265FD26C00AF691F /* WebClient.swift */; };
 		D219DB67265FD26D00AF691F /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219DB61265FD26D00AF691F /* Path.swift */; };
 		D219DB6A2660963700AF691F /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = D219DB692660963700AF691F /* config.plist */; };
-		D219DB952660FBC900AF691F /* Netspend_TestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219DB942660FBC900AF691F /* Netspend_TestAppUITests.swift */; };
 		D22069CD26679F610051D5D5 /* FraudForce.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D219DB41265E626300AF691F /* FraudForce.xcframework */; };
 		D22069CE26679F610051D5D5 /* FraudForce.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D219DB41265E626300AF691F /* FraudForce.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D22069CF26679F610051D5D5 /* NetspendSdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D219DB45265E627A00AF691F /* NetspendSdk.xcframework */; };
@@ -77,8 +76,6 @@
 		D219DB61265FD26D00AF691F /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		D219DB692660963700AF691F /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		D219DB922660FBC900AF691F /* Netspend_TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Netspend_TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D219DB942660FBC900AF691F /* Netspend_TestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Netspend_TestAppUITests.swift; sourceTree = "<group>"; };
-		D219DB962660FBC900AF691F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2206A1A2667A3F20051D5D5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		D2206A1B2667A3F20051D5D5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D2206A1C2667A3F20051D5D5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -141,15 +138,6 @@
 			path = JSONRestClient;
 			sourceTree = "<group>";
 		};
-		D219DB932660FBC900AF691F /* Netspend_TestAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D219DB942660FBC900AF691F /* Netspend_TestAppUITests.swift */,
-				D219DB962660FBC900AF691F /* Info.plist */,
-			);
-			path = Netspend_TestAppUITests;
-			sourceTree = "<group>";
-		};
 		D2206A192667A3C00051D5D5 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +179,6 @@
 		D281911426568AC300C12C48 = {
 			isa = PBXGroup;
 			children = (
-				D219DB932660FBC900AF691F /* Netspend_TestAppUITests */,
 				D219DB40265E61C000AF691F /* Frameworks */,
 				D281911F26568AC300C12C48 /* Netspend_TestApp */,
 				D281911E26568AC300C12C48 /* Products */,
@@ -332,7 +319,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D219DB952660FBC900AF691F /* Netspend_TestAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
