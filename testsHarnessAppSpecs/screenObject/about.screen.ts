@@ -10,7 +10,7 @@ class AboutScreen extends BaseSelectors {
         super(SELECTORS.ABOUT_SCREEN);
     }
 
-    get aboutScreenButton () {
+    get aboutScreenContinueButton () {
         return $(SELECTORS.ABOUT_SCREEN_CONTINUE_BUTTON);
     }
 }

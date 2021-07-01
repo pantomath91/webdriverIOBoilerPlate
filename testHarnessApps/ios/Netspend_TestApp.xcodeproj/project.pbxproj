@@ -38,16 +38,6 @@
 		D281912D26568AC700C12C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D281912B26568AC700C12C48 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D219DB972660FBC900AF691F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D281911526568AC300C12C48 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D281911C26568AC300C12C48;
-			remoteInfo = Netspend_TestApp;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		D22069D126679F610051D5D5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -75,7 +65,6 @@
 		D219DB60265FD26C00AF691F /* WebClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
 		D219DB61265FD26D00AF691F /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		D219DB692660963700AF691F /* config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
-		D219DB922660FBC900AF691F /* Netspend_TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Netspend_TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2206A1A2667A3F20051D5D5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		D2206A1B2667A3F20051D5D5 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D2206A1C2667A3F20051D5D5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -97,13 +86,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D219DB8F2660FBC900AF691F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D281911A26568AC300C12C48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,7 +171,6 @@
 			isa = PBXGroup;
 			children = (
 				D281911D26568AC300C12C48 /* Netspend_TestApp.app */,
-				D219DB922660FBC900AF691F /* Netspend_TestAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,24 +200,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D219DB912660FBC900AF691F /* Netspend_TestAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D219DB992660FBC900AF691F /* Build configuration list for PBXNativeTarget "Netspend_TestAppUITests" */;
-			buildPhases = (
-				D219DB8E2660FBC900AF691F /* Sources */,
-				D219DB8F2660FBC900AF691F /* Frameworks */,
-				D219DB902660FBC900AF691F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D219DB982660FBC900AF691F /* PBXTargetDependency */,
-			);
-			name = Netspend_TestAppUITests;
-			productName = Netspend_TestAppUITests;
-			productReference = D219DB922660FBC900AF691F /* Netspend_TestAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		D281911C26568AC300C12C48 /* Netspend_TestApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D281913126568AC700C12C48 /* Build configuration list for PBXNativeTarget "Netspend_TestApp" */;
@@ -264,10 +227,6 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					D219DB912660FBC900AF691F = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = D281911C26568AC300C12C48;
-					};
 					D281911C26568AC300C12C48 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -287,19 +246,11 @@
 			projectRoot = "";
 			targets = (
 				D281911C26568AC300C12C48 /* Netspend_TestApp */,
-				D219DB912660FBC900AF691F /* Netspend_TestAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D219DB902660FBC900AF691F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D281911B26568AC300C12C48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,13 +266,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D219DB8E2660FBC900AF691F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D281911926568AC300C12C48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,14 +295,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		D219DB982660FBC900AF691F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D281911C26568AC300C12C48 /* Netspend_TestApp */;
-			targetProxy = D219DB972660FBC900AF691F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		D281912626568AC300C12C48 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -379,44 +315,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D219DB9A2660FBC900AF691F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4ZRP28ZUZ;
-				INFOPLIST_FILE = Netspend_TestAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "self.Netspend-TestAppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Netspend_TestApp;
-			};
-			name = Debug;
-		};
-		D219DB9B2660FBC900AF691F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J4ZRP28ZUZ;
-				INFOPLIST_FILE = Netspend_TestAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "self.Netspend-TestAppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Netspend_TestApp;
-			};
-			name = Release;
-		};
 		D281912F26568AC700C12C48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -546,10 +444,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = netspendTestHarnessApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netspend.mobileapp.testApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -566,25 +464,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = netspendTestHarnessApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.netspend.mobileapp.testApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D219DB992660FBC900AF691F /* Build configuration list for PBXNativeTarget "Netspend_TestAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D219DB9A2660FBC900AF691F /* Debug */,
-				D219DB9B2660FBC900AF691F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		D281911826568AC300C12C48 /* Build configuration list for PBXProject "Netspend_TestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

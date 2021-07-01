@@ -12,13 +12,13 @@ describe('WebdriverIO and Appium, interactions with testHarnessApp,', () => {
     beforeEach(() => {
         driver.pause(2000);
         AboutScreen.waitForIsShown();
-        AboutScreen.aboutScreenButton.click();
+        // AboutScreen.aboutScreenContinueButton.click();
         EnvScreen.waitForIsShown();
         // Set the given envrionment
         // EnvScreen.envSelection('PIT:C');
         // Focus OUT
         EnvScreen.envSubmitButton.click();
-        MfeDashboardScreen.waitForIsShown();
+        // MfeDashboardScreen.waitForIsShown();
         MfeDashboardScreen.testHarnessApp.click();
         // This is where a lot of magic is happening
         // - it waits for the webview context to be loaded

@@ -37,17 +37,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGb-dV-iAD">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="Continue" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGb-dV-iAD">
                                 <rect key="frame" x="55" y="761" width="304" height="41"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.69803921570000005" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Continue">
+                                    <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" systemColor="systemGreenColor"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onContinue:" destination="Xea-zL-qrk" eventType="touchUpInside" id="a4B-3J-LkT"/>
                                 </connections>
@@ -71,6 +72,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YD6-dV-uq6"/>
                         <color key="backgroundColor" red="0.1019607843" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="About-screen">
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
                         <constraints>
                             <constraint firstItem="YD6-dV-uq6" firstAttribute="trailing" secondItem="f10-8f-s4S" secondAttribute="trailing" constant="55" id="3BO-k7-8Mz"/>
                             <constraint firstItem="zGb-dV-iAD" firstAttribute="leading" secondItem="YD6-dV-uq6" secondAttribute="leading" constant="55" id="88j-3b-wW8"/>
@@ -85,6 +89,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TgY-To-lcz"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="Qx1-A3-c0c" kind="show" identifier="envSwitchSegue" id="F6b-Go-Xt4"/>
                     </connections>
@@ -142,6 +149,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZb-01-1HC">
                                 <rect key="frame" x="137" y="753" width="156" height="41"/>
                                 <color key="backgroundColor" red="0.47058823529999999" green="0.69803921570000005" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="SUBMIT"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="bzU-9o-WoR"/>
                                 </constraints>
@@ -161,6 +169,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zhs-5E-H6A"/>
                         <color key="backgroundColor" red="0.1019607843" green="0.32549019610000002" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="Env-screen"/>
                         <constraints>
                             <constraint firstItem="hYt-qX-jke" firstAttribute="trailing" secondItem="zhs-5E-H6A" secondAttribute="trailing" id="BgO-BQ-fII"/>
                             <constraint firstItem="hYt-qX-jke" firstAttribute="top" secondItem="PaK-23-Y8C" secondAttribute="top" constant="384" id="CY9-xE-R0R"/>
@@ -305,6 +314,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AA5-Nl-yUf">
                                 <rect key="frame" x="21" y="229" width="373" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Click Me to Test MFE"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="h1I-8b-1jR"/>
