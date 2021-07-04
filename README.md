@@ -1,4 +1,4 @@
-# Netspend-TestHarness App
+WebIO Boilerplate
 
 > **Note:**
 > This boilerplate only handles local execution on 1 em/simulator at a time, not parallel execution. For more info about that Google on setting up a grid with Appium.
